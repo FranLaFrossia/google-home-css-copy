@@ -1,0 +1,36 @@
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 16px 30px;
+
+  li {
+    display: inline-block;
+    vertical-align: middle;
+    @extend %fz-small;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+
+    a {
+      &:hover {
+        opacity: .85;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    background: url('../images/icon_google-apps.svg') center center no-repeat;
+    vertical-align: middle;
+    cursor: pointer;
+    opacity: .55;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
